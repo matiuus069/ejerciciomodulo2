@@ -1,0 +1,95 @@
+body {
+    font-family: 'Monserrat', sans-serif;
+    background-image: url('img/bg.jpg');
+    background-position: top center;
+    background-repeat: no repeat;
+    background-size: cover;
+    color: #FFF,
+}
+  html, body {
+    height: 99%;
+  }
+  .navbar{
+    margin-top: 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+    margin: 0 5px;
+    padding: 3px 10px !important;
+  }
+  .nav-link.active{
+    background-color: rgba(0,0,0,0.2);
+  }
+  .nav-link:hover{
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  a:link, a:visited, a:active{
+    color: #fff;
+
+  }
+  a:hover{
+    color: #966023;
+  }
+  #mainLogin{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+  }
+  @media (max-width: 800px) {
+    #mainLogin{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+    }
+  }
+  #mainLogin input{
+    opacity: 0.8;
+    color: #000;
+    border-radius: 0;
+  }
+  #mainLogin input:hover{
+    opacity: 0.9;
+  }
+  #mainLogin input:focus{
+    opacity: 1;
+  }
+  #mainLogin input[type="button"]{
+    background-color: #966023;
+    border: 1px solid #000;
+  }
+  #mainLogin input[type="button"]:hover{
+    color: #fff;
+    background-color: #B27E44;
+  }
+  #cobertor {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba (0,0,0,0.5);
+    z-index: -1;
+    animation: 7s refulgir;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes refulgir {
+    0% {
+      background-color: rgba(0,0,0,0.3);
+    }
+    50% {
+      background-color: rgba(0,0,0,0.7);
+    }
+    100% {
+      background-color: rgba(0,0,0,0.2);
+    }
+
+  }
